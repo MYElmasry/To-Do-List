@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="To-Do List.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <div class="form">
-            <input type="text" class="input">
-            <input type="submit" class="add" value="Add Task">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List - Manage your tasks easily</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header><h1 class="text-center fw-bold">To Do List</h1></header>
+    <main>
+      <div class="container">
+        <div class="row gap-5">
+          <div
+            class="section-container w-auto d-flex flex-column align-items-center col-sm-12 col-md-6 col-lg-4 mb-3"
+          >
+            <h3 class="align-self-start fw-bold mb-3">
+              Not Started <i class="fa-regular fa-circle"></i>
+            </h3>
+            <div class="task-list mb-2"></div>
+            <button class="add fw-bold rounded w-100 border-0">+ Add</button>
+          </div>
+          <div
+            class="section-container w-auto d-flex flex-column align-items-center col-sm-12 col-md-6 col-lg-4 mb-3"
+          >
+            <h3 class="align-self-start fw-bold mb-3">
+              In Progress <i class="fa-solid fa-circle-half-stroke"></i>
+            </h3>
+            <div class="task-list mb-2"></div>
+            <button class="add fw-bold rounded w-100 border-0">+ Add</button>
+          </div>
+          <div
+            class="section-container w-auto d-flex flex-column align-items-center col-sm-12 col-md-6 col-lg-4 mb-3"
+          >
+            <h3 class="align-self-start fw-bold mb-3">
+              Completed <i class="fa-regular fa-circle"></i>
+            </h3>
+            <div class="task-list mb-2"></div>
+            <button class="add fw-bold rounded w-100 border-0">+ Add</button>
+          </div>
         </div>
-        <div class="tasks"></div>
-    </div>
-    <script src="To-Do List.js"></script>
-</body>
+      </div>
+    </main>
+    <footer class="d-flex justify-content-center">
+      <span class="footer"
+        >Coded with 🖤 By
+        <a
+          href="https://www.linkedin.com/in/mohamed-elmasry8822"
+          target="_blank"
+          >Mohamed Yasser</a
+        ></span
+      >
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

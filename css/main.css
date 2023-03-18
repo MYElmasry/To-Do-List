@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+  background-color: #aed9e0;
+}
+h1 {
+  margin: 6rem auto;
+  color: #333;
+}
+.row {
+  justify-content: center;
+}
+.section-container h3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.section-container h3 svg {
+  color: #1976d2;
+}
+.section-container .task-list {
+  min-height: 34px;
+  min-width: 271px;
+}
+
+.section-container .task-list .task-item {
+  background-color: #f5f5f5;
+  padding-right: 10px;
+  cursor: move;
+}
+
+.section-container .task-list .task-item input {
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.section-container .task-list .task-item input.disabled {
+  pointer-events: none;
+}
+.section-container .task-list .task-item input:focus {
+  outline: none;
+}
+.section-container .task-list .task-item .edit-button {
+  color: #1976d2;
+  opacity: 50%;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.section-container .task-list .task-item .edit-button:hover {
+  opacity: 1;
+}
+.section-container .task-list .task-item .delete-button {
+  color: #ff5c5c;
+  opacity: 50%;
+  transition: opacity 0.3s;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.section-container .task-list .task-item .delete-button:hover {
+  opacity: 1;
+}
+.section-container .add {
+  background-color: #4caf50;
+  font-size: 14px;
+}
+footer {
+  margin: 10rem 0rem 3rem;
+}
+@media (max-width: 767px) {
+  footer {
+    margin: 4rem 0rem 3rem;
+  }
+}
+.footer a {
+  text-decoration: none;
+  color: #2f6e31;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #4caf50;
+}
